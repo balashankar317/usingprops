@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project name="usingprops" basedir="." default="print">
+    <property file="build-qa.properties"/>
+
+    <target name="print">
+        <echo>build version: ${build.version}</echo>
+        <echo>db driver: ${db.driverClassName}</echo>
+    </target>
+</project>
